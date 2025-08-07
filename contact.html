@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="icon" href="images/iste logo.jpeg" type="image/jpeg">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="brand">
+  <img src="images/iste logo 2.jpg" alt="Club Logo" class="logo" />
+  <span class="site-title">ISTE PESCE</span>
+</a>
+            <div class="menu-icon" id="menu-icon">
+                <span id="hide_1"></span>
+                <span id="rotate_1" style="position: absolute;top: 45.6px;" ></span>
+                <span id="rotate_2"></span>
+                <span id="hide_2"></span>
+            </div>
+<ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="event.html">Event</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle">Student Chapters</a>
+                <ul class="dropdown-menu">
+                    <li><a href="istewings.html">ISTE WINGS</a></li>
+                    <li><a href="istearcs.html">ISTE ARCS</a></li>
+                </ul>
+            </li>
+            <li><a href="our_team.html">Our Team</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+        </ul>
+               
+        </nav>
+    </header>
+    <section class="contact animated">
+        <div class="content">
+            <h2>Contact Us</h2>
+
+        </div>
+
+        <div class="container animated">
+            <div class="contactInfo">
+             
+                <div class="box">
+                    <a href="https://www.instagram.com/pesce.iste/ " target="_blank">
+                    <div class="icon"><b></b><i class="fa-brands fa-instagram"></i></div>
+                    <div class="text">
+                        <h3>INSTAGRAM</h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="box">
+                    <a href="https://www.linkedin.com/company/iste-pesce/" target="_blank">
+                    <div class="icon"><b></b><i class="fa-brands fa-linkedin-in"></i></div>
+                    <div class="text">
+                        <h3>LinkedIn</h3>
+                    </a>
+                    
+                </div>
+            </div>
+            <div class="box">
+                <a href="@gmail.com" target="_blank">
+                <div class="icon"><b></b><i class="fa-regular fa-envelope" ></i></div>
+                <div class="text">
+                    <h3>Mail</h3>
+                </a>
+                </div>
+            </div>
+            <!--<div class="box">
+                <a href="https://github.com/Devops-Malnad" target="_blank">
+                <div class="icon"><b></b><i class="fa-brands fa-github" ></i></div>
+                <div class="text">
+                    <h3>GitHub</h3>
+                </a>
+                </div>
+            </div>
+        </div> --> 
+            </div>
+            <div class="contactForm">
+                <form action="contact.html#">
+                    <h2>Send Message</h2>
+                    <div class="inputBox">
+                        <h1>Mithun D Budhya</h1>
+                        <img src="images/iste logo 2.jpg" alt="Owner 1" class="owner-photo">
+                        <span class="contact-label">+91 7892988796</span>
+                    </div>
+                    <div class="inputBox">
+                        <h1>XYZ</h1>
+                        <img src="images/iste logo 2.jpg" alt="Owner 2" class="owner-photo">
+                        <span class="contact-label">+91 1234567891</span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/pesce.iste/" target="_blank" class="social-link">
+                <img src="images/instalogo.png" alt="Instagram">
+            </a>
+            <a href="https://www.linkedin.com/company/iste-pesce/" target="_blank"
+                class="social-link">
+                <img src="images/linkedinlogo.png" alt="LinkedIn">
+            </a>
+            <a href="@gmail.com" target="_blank" class="social-link">
+                <img src="images/maillogo.png" alt="Gmail">
+            </a>
+            <!--<a href="https://github.com/Devops-Malnad" target="_blank" class="social-link">
+                <img src="https://cdn.worldvectorlogo.com/logos/github-icon-1.svg" alt="GitHub">
+            </a>-->
+        </div>
+    </footer>
+    <script src="contact.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        const animatedElements = document.querySelectorAll('.animated');
+
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('fade-in-up');
+              observer.unobserve(entry.target);
+            }
+          });
+        }, {
+          threshold: 0.1
+        });
+
+        animatedElements.forEach(element => {
+          observer.observe(element);
+        });
+      });
+    </script>
+</body>
+
+</html>
